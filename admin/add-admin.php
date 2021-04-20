@@ -3,6 +3,14 @@
   <div class="wrapper">
     <h1>Add Admin</h1>
     <br><br>
+    <?php
+    if (isset($_SESSION['add'])) //Checking whether the SEssion is Set of Not
+    {
+      echo $_SESSION['add']; //Display the SEssion Message if SEt
+      unset($_SESSION['add']); //Remove Session Message
+    }
+    ?>
+
     <form action="" method="POST">
 
       <table class="tbl-30">
