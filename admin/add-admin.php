@@ -55,8 +55,6 @@ if (isset($_POST['submit'])) {
         ";
 
   //3. Executing Query and Saving Data into Datbase
-  $conn = mysqli_connect('localhost', 'samir', 'Samir123@') or die(mysqli_error());
-  $db_select = mysqli_select_db($conn, 'restfooder') or die(mysqli_error());
 
   $res = mysqli_query($conn, $sql) or die(mysqli_error());
 
