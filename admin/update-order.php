@@ -15,7 +15,7 @@
 
       //Get all other details based on this id
       //SQL Query to get the order details
-      $sql = "SELECT * FROM orders WHERE id=$id";
+      $sql = "SELECT * FROM food_order WHERE id=$id";
       //Execute Query
       $res = mysqli_query($conn, $sql);
       //Count Rows
@@ -147,7 +147,7 @@
       $customer_address = $_POST['customer_address'];
 
       //Update the Values
-      $sql2 = "UPDATE orders SET 
+      $sql2 = "UPDATE food_order SET 
                     qty = $qty,
                     total = $total,
                     status = '$status',

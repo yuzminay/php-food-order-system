@@ -32,7 +32,7 @@
 
       <?php
       //Get all the orders from database
-      $sql = "SELECT * FROM orders ORDER BY id DESC"; // DIsplay the Latest Order at First
+      $sql = "SELECT * FROM food_order ORDER BY id DESC"; // DIsplay the Latest Order at First
       //Execute Query
       $res = mysqli_query($conn, $sql);
       //Count the Rows
@@ -49,7 +49,7 @@
           $price = $row['price'];
           $qty = $row['qty'];
           $total = $row['total'];
-          $order_date = $row['order_date'];
+          $order_date = $row['date'];
           $status = $row['status'];
           $customer_name = $row['customer_name'];
           $customer_contact = $row['customer_contact'];
